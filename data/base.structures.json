@@ -1,0 +1,38 @@
+[
+	{
+		"$_id": "0", "$type": "$elemento", "$forma": "$rectangular", "$width": "$all"/*, "$height": "$content", "$start": "$i-left $i-top"*/
+		, "$min-height": 100, "$especificaciones": {
+			/* "$size": { // Optional
+				"1200:": { // Posible estandar de tamaño
+
+				},
+				"992:": { // Posible estandar de tamaño
+
+				},
+				"768:": { // Posible estandar de tamaño
+
+				},
+				"576:": { // Posible estandar de tamaño
+
+				},
+				":576": { // Posible estandar de tamaño
+
+				}
+			} */
+		}
+
+		// width: $all, $complement, ###px, ###%, $content, ###frames
+		// height: $all, $complement, ###px, ###%, $content, ###frames
+		// start: $i-left, $i-top, $prev-element, 
+		// end: $i-right, $i-botton, $next-element, 
+	},
+	{
+		"$_id": "1", "$type": "$elemento", "$forma": "$rectangular", "$width": "$all", "$min-height": "$complement"
+	},
+	{
+		"$_id": "2", "$type": "$elemento", "$forma": "$rectangular", "$width": "$all", "$min-height": 100
+	},
+	{
+		"$_id": "3", "$type": "$grupo", "$forma": "$rectangular", "$min-width": "$all", "$min-height": "$all", "$children": ["0", "1", "2"]
+	}
+]

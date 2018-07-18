@@ -1,0 +1,54 @@
+// Root = Ba0
+// Section = Ba3
+[
+	{
+		"$_id":"0", "$route": "www.geiner.com", /*"$base": "",*/"$children": true, "$view": true, "$ready": false, "$type": "$dominio$container$estable",
+		// route: string que corresponde a la URI del enlace
+		// base: determina el enlace base que antecede al actual. Su ausencia significa que el enlace actual es una raiz
+		// children: para determinar la carga adelantada de un enlace inferior al actual, basada en comportamientos recurrentes por el usurio o estadísticas
+		// view: determina si esta enlace se puede visibilizar cuando se lo solicite
+		// ready: determina si el enlace está listo para utilizarse. Cuando es falso a pesar que el view sea true no se puede visualizar el contenido
+		// type: establece el tipo de enlace que es, asimismo permite saber cómo se debe manejar el enlace. Basado en ello están determinados los parámetros($dominio, $cnt, $view, $variable, $especializado)
+		"$parametros": {
+			"$access": "$general", "$structure": "Ca3"
+		}
+		// parametros: conjunto de opciones del enlace. Cada enlace tiene sus propios parámetros según su tipo
+		//		- access: control de acceso ($general, $privado, $interno, $control)
+	},
+	{
+		"$_id":"1", "$route": "", "$chidren": false, "$base": 0, "$view": true, "$type": "$view",
+		"$parametros": {
+			"$dinamicaDeFlujoDeInformacion": "$medio|48%",
+
+			"en": "Section", "ttl": "Inicio", "nav": true,
+			"defaultComponents": ["Inicio"]
+		}
+	},
+	{
+		"$_id":"2", "route": "inicio", "chidren": false, "base": 1, "view": true,
+		"parametros": {
+			"type": "ext", "redirect": "1"
+		}
+	},
+	{
+		"$_id":"3", "route": "/noticias", "chidren": true, "base": 0, "view": true,
+		"parametros": {
+			"type": "v", "en": "Ba3", "ttl": "Noticias", "nav": true,
+			"defaultComponents": ["News"]
+		}
+	},
+	{
+		"$_id":"4", "route": "/materiales", "chidren": true, "base": 0, "view": true,
+		"parametros": {
+			"type": "v", "en": "Ba3", "ttl": "Materiales", "nav": true,
+			"defaultComponents": ["Materiales"]
+		}
+	},
+	{
+		"$_id":"5", "route": "/calendario", "chidren": true, "base": 0, "view": true,
+		"parametros": {
+			"type": "v", "en": "Ba3", "ttl": "Calendario", "nav": true,
+			"defaultComponents": ["Calendar"]
+		}
+	}
+]

@@ -1,0 +1,62 @@
+/*const eles = [
+	{_id: "a0", typ: "c", ele: "Root", props: {children: ["1"]}},
+	{_id: "a1", typ: "c", ele: "App", props: {children: ["2"]}},
+	{_id: "a2", typ: "c", ele: "Header", props: {children: ["a4"], style: {}, logo: {url: "", alt: "Logo", w: 50, h: 50}}},
+	{_id: "a3", typ: "e", ele: "img"},
+	{_id: "a4", base: "a3", props: {fromParent: {props: {alt: ["logo", "alt"], src: ["logo", "url"], width: ["logo","w"], height: ["logo", "h"]}}},
+	{_id: "a5", base: "a3", propsTemplate: {alt: "alt", "src": "url", widht: "w", height: "h"}},
+	{_id: "a6", id: "_Nav", props: {
+		navbarCollapse: {
+			id: "myNav", style: {}, navbarNav: {
+				style: {}, items: [
+					{url: "r_a1", txt: "Inicio"},
+					{url: "r_a3", txt: "Noticias"},
+					{url: "r_a4", txt: "Materiales"},
+					{url: "r_a5", txt: "Calendario"},
+				]
+			}
+		}
+	}}
+]*/
+
+[
+	{
+		"key": "Root"
+		"props": {
+			"children": [1]
+		}
+	},
+	{
+		"key": "App",
+		"props": {
+			"children": [2, 3, 4, 5]
+		}
+	},
+	{
+
+	}
+	{
+		"key": "Header",
+		"props": {
+			"children": []
+		}
+	}
+	{
+		"key": "Nav",
+		"props": {
+			"children": []
+		}
+	},
+	{
+		"key": "Section",
+		"props": {
+			"children": []
+		}
+	},
+	{
+		"key": "Footer",
+		"props": {
+			"children": []
+		}
+	}
+]
