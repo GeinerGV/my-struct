@@ -18,9 +18,9 @@
 	{
 		"$_id":"1", "$route": "", "$chidren": false, "$base": 0, "$view": true, "$type": "$view",
 		"$parametros": {
-			"$dinamicaDeFlujoDeInformacion": "$medio|48%",
+			//"$dinamicaDeFlujoDeInformacion": "$medio|48%",
 
-			"en": "Section", "ttl": "Inicio", "nav": true,
+			"en": {"1": "$InicioComponent"}, "ttl": "Inicio", "nav": true,
 			"defaultComponents": ["Inicio"]
 		}
 	},
