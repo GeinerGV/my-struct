@@ -1,10 +1,15 @@
 import React from 'react';
 import HelloWorld from '../components/hello-world';
+import {RootContainer, RootElement} from 'react-server';
 
 export default class SinglePage {
 	getElements() {
 		return (
-				<HelloWorld/>
+				<RootContainer>
+					<RootElement>
+						<HelloWorld/>
+					</RootElement>
+				</RootContainer>
 			);
 	}
 

@@ -16,7 +16,7 @@ export default class HelloWorld extends React.Component {
 	render() {
 		return (
 			<div id="init">
-				<Link path="/new">New Page</Link>
+				<Link path="/new" reuseDom={true}>New Page</Link>
 				<h2>Hello, World{'!'.repeat(this.state.exclamationCount)}</h2>
 				<button onClick={this.handleClick}>Get More Excited!</button>
 			</div>
