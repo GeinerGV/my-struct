@@ -1,5 +1,5 @@
 import React from 'react';
-import {logging} from 'react-server';
+import {logging, Link} from 'react-server';
 
 const logger = logging.getLogger(__LOGGER__);
 
@@ -15,7 +15,8 @@ export default class HelloWorld extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div id="init">
+				<Link path="/new">New Page</Link>
 				<h2>Hello, World{'!'.repeat(this.state.exclamationCount)}</h2>
 				<button onClick={this.handleClick}>Get More Excited!</button>
 			</div>

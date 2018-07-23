@@ -38,7 +38,7 @@
 	{
 		"key": "Header",
 		"props": {
-			"children": []
+			"children": [4]
 		}
 	}
 	{
@@ -58,5 +58,8 @@
 		"props": {
 			"children": []
 		}
+	},
+	{
+		"key": ""
 	}
 ]

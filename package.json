@@ -4,7 +4,7 @@
   "description": "A react-server instance",
   "main": "HelloWorld.js",
   "scripts": {
-    "start": "NODE_ENV=development react-server start",
+    "start": "react-server start",
     "lint": "eslint test.js pages",
     "test": "npm run lint && nsp check && ava test.js"
   },

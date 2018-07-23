@@ -4,6 +4,10 @@
     "Homepage": {
       "path": "/",
       "page": "pages/hello-world.js"
+    },
+    "NewPage": {
+    	"path": "/new",
+    	"page": "pages/hello-world2.js"
     }
   }
 }

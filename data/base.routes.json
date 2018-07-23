@@ -20,8 +20,7 @@
 		"$parametros": {
 			//"$dinamicaDeFlujoDeInformacion": "$medio|48%",
 
-			"en": {"1": "$InicioComponent"}, "ttl": "Inicio", "nav": true,
-			"defaultComponents": ["Inicio"]
+			"en": {"1": "$InicioComponent"}, "ttl": "Inicio", "nav": true
 		}
 	},
 	{
