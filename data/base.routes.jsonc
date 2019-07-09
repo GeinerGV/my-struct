@@ -9,6 +9,7 @@
 		// view: determina si esta enlace se puede visibilizar cuando se lo solicite
 		// ready: determina si el enlace está listo para utilizarse. Cuando es falso a pesar que el view sea true no se puede visualizar el contenido
 		// type: establece el tipo de enlace que es, asimismo permite saber cómo se debe manejar el enlace. Basado en ello están determinados los parámetros($dominio, $cnt, $view, $variable, $especializado)
+		
 		"$parametros": {
 			"$access": "$general", "$structure": "Ca3"
 		}
